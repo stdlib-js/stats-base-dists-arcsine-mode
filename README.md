@@ -33,7 +33,7 @@ The [mode][mode] for an [arcsine][arcsine-distribution] random variable with wit
 <!-- <equation class="equation" label="eq:arcsine_mode" align="center" raw="\operatorname{mode}\left( X \right) = \{ a, b \}" alt="Mode for an arcsine distribution."> -->
 
 ```math
-\operatorname{mode}\left( X \right) = \{ a, b \}
+\mathop{\mathrm{mode}}\left( X \right) = \{ a, b \}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \{ a, b \}" data-equation="eq:arcsine_mode">
@@ -49,38 +49,30 @@ The [mode][mode] for an [arcsine][arcsine-distribution] random variable with wit
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-arcsine-mode
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-mode = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var mode = require( 'path/to/vendor/umd/stats-base-dists-arcsine-mode/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.mode;
-})();
-</script>
+var mode = require( '@stdlib/stats-base-dists-arcsine-mode' );
 ```
 
 #### mode( a, b )
@@ -138,14 +130,9 @@ y = mode( 3.0, 3.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var mode = require( '@stdlib/stats-base-dists-arcsine-mode' );
 
 var a;
 var b;
@@ -158,11 +145,6 @@ for ( i = 0; i < 10; i++ ) {
     v = mode( a, b );
     console.log( 'a: %d, b: %d, mode(X;a,b): %d', a.toFixed( 4 ), b.toFixed( 4 ), v.toFixed( 4 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
