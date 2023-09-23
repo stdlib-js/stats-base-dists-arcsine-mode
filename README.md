@@ -67,7 +67,7 @@ The [mode][mode] for an [arcsine][arcsine-distribution] random variable with wit
 ## Usage
 
 ```javascript
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@deno/mod.js';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@v0.1.0-deno/mod.js';
 ```
 
 #### mode( a, b )
@@ -127,7 +127,7 @@ y = mode( 3.0, 3.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@deno/mod.js';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-arcsine-mode@v0.1.0-deno/mod.js';
 
 var a;
 var b;
